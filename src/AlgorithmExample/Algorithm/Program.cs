@@ -16,13 +16,12 @@ namespace Algorithm
             data.Add(3);
             Console.WriteLine(data.GetSize()); // 4
             data.Add(4);
-            Console.WriteLine(data.GetSize()); // 4
-            data.Add("fdddf");
+          
             Console.WriteLine(data.GetSize()); // 8
             Console.WriteLine("*********************");
             for (int i = 0; i < data.GetSize(); i++)
             {
-                Console.WriteLine(data.GetT(i));
+                Console.WriteLine(data.GetT(i).ToString());
             }
 
             var linkedList = new LinkedList<int>();
@@ -35,7 +34,7 @@ namespace Algorithm
             Console.WriteLine("*************");
             linkedList.Display();
 
-            DeleteKthElement(linkedList.head, 2);
+            DeleteKthElement(linkedList.head, 3);
             Console.WriteLine("*************");
             linkedList.Display();
         }
