@@ -17,13 +17,17 @@ namespace Algorithm
             Console.WriteLine(data.GetSize()); // 4
             data.Add(4);
             Console.WriteLine(data.GetSize()); // 4
-            data.Add(4);
+            data.Add("fdddf");
             Console.WriteLine(data.GetSize()); // 8
             Console.WriteLine("*********************");
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < data.GetSize(); i++)
             {
-            Console.WriteLine(data.GetT(i));
+                Console.WriteLine(data.GetT(i));
             }
+
+            var linkedList = new LinkedList<string>();
+            linkedList.Add("huseyin");
+            linkedList.Add("şimşek");
         }
     }
 }

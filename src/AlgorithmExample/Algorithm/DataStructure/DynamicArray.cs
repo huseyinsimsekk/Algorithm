@@ -19,6 +19,10 @@ namespace Algorithm.DataStructure
         }
         public T GetT(int index)
         {
+            if (Data[index]==null)
+            {
+                return default(T);
+            }
             return (T)Data[index];
         }
         public void Add(Object data)
