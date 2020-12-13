@@ -7,31 +7,31 @@ namespace Algorithm.DataStructure
 {
     public class LinkedList<T>
     {
-        Node _head;
+        public Node head;
         public LinkedList()
         {
-            _head = null;
+            head = null;
         }
         public void Add(Object data)
         {
             Node newNode = new Node(data, null);
-            if (_head == null)
+            if (head == null)
             {
-                _head = newNode;
+                head = newNode;
             }
             else
             {
-                newNode.next = _head;
-                _head = newNode;
+                newNode.next = head;
+                head = newNode;
             }
         }
         public void Delete()
         {
-            _head = _head.next;
+            head = head.next;
         }
         public void Display()
         {
-            Node node = _head;
+            Node node = head;
             while (node != null)
             {
                 Console.WriteLine(node.data.ToString());
