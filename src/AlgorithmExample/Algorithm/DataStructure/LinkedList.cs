@@ -19,9 +19,23 @@ namespace Algorithm.DataStructure
             {
                 _head = newNode;
             }
-            else{
+            else
+            {
                 newNode.next = _head;
                 _head = newNode;
+            }
+        }
+        public void Delete()
+        {
+            _head = _head.next;
+        }
+        public void Display()
+        {
+            Node node = _head;
+            while (node != null)
+            {
+                Console.WriteLine(node.data.ToString());
+                node = node.next;
             }
         }
     }
