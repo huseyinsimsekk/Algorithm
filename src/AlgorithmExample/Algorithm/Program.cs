@@ -34,7 +34,7 @@ namespace Algorithm
             Console.WriteLine("*************");
             linkedList.Display();
 
-            DeleteKthElement(linkedList.head, 3);
+            DeleteKthElement(linkedList.head, 6);
             Console.WriteLine("*************");
             linkedList.Display();
         }
@@ -49,6 +49,10 @@ namespace Algorithm
             {
                 fastPointer = fastPointer.next;
                 k--;
+            }
+            if (fastPointer==null)
+            {
+                return;
             }
             while (fastPointer.next != null)
             {
